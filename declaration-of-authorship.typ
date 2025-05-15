@@ -54,15 +54,15 @@
       columns: (1fr, 1fr),
       gutter: 20pt,
       ..authors.map(author => {
-        v(3.5em)
-        line(length: 80%)
+       v(1em)
+       "gez. "
         author.name
       })
     )
   } else {
     for author in authors {
-      v(4em)
-      line(length: 40%)
+      v(1em)
+    "gez. "
       author.name
     }
   }

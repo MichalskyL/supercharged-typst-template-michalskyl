@@ -67,8 +67,8 @@
     )
   } else {
     for author in authors {
-      v(4em)
-      line(length: 40%)
+      v(1em)
+      "gez. "
       author.name
     }
   }
