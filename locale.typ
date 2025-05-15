@@ -4,7 +4,7 @@
 )
 
 #let TITLEPAGE_SECTION_B = (
-  "de": "aus dem Studiengang ",
+  "de": "des Studienganges ",
   "en": "from the course of studies ",
 )
 

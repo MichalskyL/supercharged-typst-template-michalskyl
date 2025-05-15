@@ -119,8 +119,8 @@
 
   // type of degree (optional)
   if (type-of-degree != none and type-of-degree.len() > 0) {
+    v(0.5em)
     align(center, text(1em, TITLEPAGE_SECTION_A.at(language)))
-    v(-0.25em)
     align(center, text(weight: "semibold", 1.25em, type-of-degree))
   }
 
