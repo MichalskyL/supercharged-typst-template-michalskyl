@@ -202,19 +202,31 @@
   v(1fr)
 
   // author information
-  grid(
+  let isStudentIdAvailable = authors.filter(author => "student-id" not in author or 
+      author.student-id == "" or author.student-id == none).len() == 0
+  align(center)[
+  #grid(
     columns: (auto, auto),
     row-gutter: 11pt,
     column-gutter: 2.5em,
+    align: left,
 
     // students
-    text(weight: "semibold", TITLEPAGE_STUDENT_ID.at(language)),
+    if (isStudentIdAvailable) {
+      text(weight: "semibold", TITLEPAGE_STUDENT_ID.at(language))
+    } else {
+      text(weight: "semibold", TITLEPAGE_WITHOUT_STUDENT_ID.at(language))
+    },
     stack(
       dir: ttb,
       for author in authors {
-        text([#author.student-id, #author.course])
+        if (isStudentIdAvailable) {
+          text([#author.student-id, #author.course])
+        } else {
+          text([#author.course])
+        }
         linebreak()
-      }
+      },
     ),
 
     // company
@@ -293,5 +305,5 @@
     if ("university" in supervisor and type(supervisor.university) == str) {
       text(supervisor.university)
     }
-  )
+  )]
 }

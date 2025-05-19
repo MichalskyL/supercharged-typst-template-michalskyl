@@ -18,6 +18,11 @@
   "en": "Student ID, Course:",
 )
 
+#let TITLEPAGE_WITHOUT_STUDENT_ID = (
+  "de": "Kurs:",
+  "en": "Course:",
+)
+
 #let TITLEPAGE_COMPANY = (
   "de": "Unternehmen:",
   "en": "Company:",
