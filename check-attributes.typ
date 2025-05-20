@@ -14,6 +14,8 @@
   show-list-of-tables,
   show-code-snippets,
   show-abstract,
+  show-left-logo,
+  show-right-logo,
   header,
   numbering-alignment,
   toc-depth,
@@ -56,6 +58,8 @@
     show-list-of-tables: show-list-of-tables,
     show-code-snippets: show-code-snippets,
     show-abstract: show-abstract,
+    show-left-logo: show-left-logo,
+    show-right-logo: show-right-logo,
   )
 
   for (key, attribute) in boolean-attributes {
