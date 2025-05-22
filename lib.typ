@@ -79,6 +79,7 @@
   heading-numbering: "1.1",
   math-numbering: "(1)",
   page-numbering: (preface: "I", main: "1 / 1", appendix: "a"),
+  use-global-page-numbering: false,
   logo-left: image("dhbw.svg"),
   logo-right: none,
   logo-size-ratio: "1:1",
@@ -127,6 +128,7 @@
     math-numbering,
     ignored-link-label-keys-for-highlighting,
     page-numbering,
+    use-global-page-numbering,
   )
 
   // set the document's basic properties
@@ -340,7 +342,9 @@
       )
     },
   )
-  counter(page).update(1)
+  if not use-global-page-numbering {
+    counter(page).update(1)
+  }
 
   if (not at-university and show-confidentiality-statement) {
     pagebreak()
@@ -467,7 +471,9 @@
       )
     },
   )
-  counter(page).update(1)
+  if not use-global-page-numbering {
+    counter(page).update(1)
+  }
 
   body
 

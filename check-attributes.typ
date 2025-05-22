@@ -39,6 +39,7 @@
   math-numbering,
   ignored-link-label-keys-for-highlighting,
   page-numbering,
+  use-global-page-numbering,
 ) = {
   if (title == none or title == "") {
     panic("Title is missing. Specify a title in the 'title' attribute of the template.")
@@ -60,6 +61,7 @@
     show-abstract: show-abstract,
     show-left-logo: show-left-logo,
     show-right-logo: show-right-logo,
+    use-global-page-numbering: use-global-page-numbering,
   )
 
   for (key, attribute) in boolean-attributes {
