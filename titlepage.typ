@@ -12,6 +12,7 @@
   right-logo-height,
   supervisor,
   title,
+  time-range,
   type-of-degree,
   type-of-thesis,
   university,
@@ -210,6 +211,14 @@
     row-gutter: 11pt,
     column-gutter: 2.5em,
     align: left,
+
+    // time range
+    if (time-range != none and time-range > 0) {
+      text(weight: "semibold", TITLEPAGE_TIME_RANGE.at(language))
+    }, 
+    if (time-range != none and time-range > 0) {
+      [#time-range #TITLEPAGE_TIME_UNIT.at(language)]
+    },
 
     // students
     if (isStudentIdAvailable) {

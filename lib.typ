@@ -67,6 +67,7 @@
   confidentiality-statement-content: none,
   declaration-of-authorship-content: none,
   titlepage-content: none,
+  time-range: none,
   university: none,
   university-location: none,
   university-short: none,
@@ -129,6 +130,7 @@
     ignored-link-label-keys-for-highlighting,
     page-numbering,
     use-global-page-numbering,
+    time-range,
   )
 
   // set the document's basic properties
@@ -202,6 +204,7 @@
       right-logo-height,
       supervisor,
       title,
+      time-range,
       type-of-degree,
       type-of-thesis,
       university,

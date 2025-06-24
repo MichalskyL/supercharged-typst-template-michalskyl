@@ -40,6 +40,7 @@
   ignored-link-label-keys-for-highlighting,
   page-numbering,
   use-global-page-numbering,
+  time-range,
 ) = {
   if (title == none or title == "") {
     panic("Title is missing. Specify a title in the 'title' attribute of the template.")
@@ -285,6 +286,16 @@
             + "' attribute of the template.",
         )
       }
+    }
+  }
+
+  let optional-number-attributes = (
+    time-range: time-range,
+  )
+
+  for (key, attribute) in optional-number-attributes {
+    if (attribute != none and type(attribute) != int) {
+      panic("Attribute '" + key + "' is invalid. Specify an integer in the '" + key + "' attribute of the template.")
     }
   }
 }

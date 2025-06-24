@@ -13,6 +13,16 @@
   "en": "at the ",
 )
 
+#let TITLEPAGE_TIME_RANGE = (
+  "de": "Bearbeitungszeitraum:",
+  "en": "Time Range:",
+)
+
+#let TITLEPAGE_TIME_UNIT = (
+  "de": "Wochen",
+  "en": "weeks",
+)
+
 #let TITLEPAGE_STUDENT_ID = (
   "de": "Matrikelnummer, Kurs:",
   "en": "Student ID, Course:",
