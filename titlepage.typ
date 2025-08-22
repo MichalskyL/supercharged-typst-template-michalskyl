@@ -12,6 +12,7 @@
   right-logo-height,
   supervisor,
   title,
+  titlepage-spacing,
   time-range,
   type-of-degree,
   type-of-thesis,
@@ -23,6 +24,11 @@
   confidentiality-marker,
   university-short,
 ) = {
+  show align: it => {
+    v(titlepage-spacing)
+    it
+  }
+
   if (many-authors) {
     v(-1.5em)
   } else {

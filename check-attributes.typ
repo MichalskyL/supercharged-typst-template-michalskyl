@@ -41,6 +41,7 @@
   page-numbering,
   use-global-page-numbering,
   time-range,
+  titlepage-spacing,
 ) = {
   if (title == none or title == "") {
     panic("Title is missing. Specify a title in the 'title' attribute of the template.")
@@ -128,6 +129,7 @@
   let length-attributes = (
     acronym-spacing: acronym-spacing,
     glossary-spacing: glossary-spacing,
+    titlepage-spacing: titlepage-spacing,
   )
 
   if ("offset-x" in confidentiality-marker) {

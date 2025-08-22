@@ -67,6 +67,7 @@
   confidentiality-statement-content: none,
   declaration-of-authorship-content: none,
   titlepage-content: none,
+  titlepage-spacing: 0pt,
   time-range: none,
   university: none,
   university-location: none,
@@ -131,6 +132,7 @@
     page-numbering,
     use-global-page-numbering,
     time-range,
+    titlepage-spacing,
   )
 
   // set the document's basic properties
@@ -204,6 +206,7 @@
       right-logo-height,
       supervisor,
       title,
+      titlepage-spacing,
       time-range,
       type-of-degree,
       type-of-thesis,
